@@ -42,18 +42,65 @@ public class loop {
         // System.out.println();
 
         // print sum of fist n natural numbers
-        System.out.println("Enter the number");
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int sum = 0;
-        int i = 1;
+        // System.out.println("Enter the number");
+        // Scanner sc = new Scanner(System.in);
+        // int n = sc.nextInt();
+        // int sum = 0;
+        // int i = 1;
 
-        while (i <= n) {
-            sum += i;
-            i++;
-        }
-        System.out.println(sum);
+        // while (i <= n) {
+        // sum += i;
+        // i++;
+        // }
+        // System.out.println(sum);
 
+        // for loop
+
+        // print hello world 10 time using for loop
+
+        // for (int j = 1; j <= 10; j++) {
+        // System.out.println("hello world");
+        // }
+
+        // print square patter
+
+        // for (int line = 1; line <= 4; line++) {
+        // System.out.println("****");
+
+        // }
+
+        // print reverse of a number
+        // given number 10899
+
+        // int m = 10899;
+        // while (m > 0) {
+        // int lastDigit = m % 10;
+        // System.out.println(lastDigit + " ");
+        // m = m / 10;
+        // }
+
+        // reverse the given number
+
+        // given number = 10899
+
+        // int o = 123446;
+        // int rev = 0;
+
+        // while (o > 0) {
+        // int lastnumber = o % 10;
+        // rev = (rev * 10 + lastnumber);
+        // o = o / 10;
+
+        // }
+        // System.out.println(rev);
+
+        // Do while loop
+
+        int count = 0;
+        do {
+            System.out.println("hello swaraj");
+            count++;
+        } while (count <= 10);
     }
 
 }
