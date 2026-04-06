@@ -13,18 +13,27 @@ public class breakstatemnt {
 
         // System.out.println("i am out of the loop ");
 
-        Scanner sc = new Scanner(System.in);
-        do {
-            System.out.println("Enter your number");
-            int j = sc.nextInt();
+        // Scanner sc = new Scanner(System.in);
+        // do {
+        // System.out.println("Enter your number");
+        // int j = sc.nextInt();
 
-            if (j % 10 == 0) {
-                break;
+        // if (j % 10 == 0) {
+        // break;
 
+        // }
+        // System.out.println(j);
+
+        // } while (true);
+
+        // continue statement in loop
+
+        for (int i = 1; i <= 5; i++) {
+            if (i == 3) {
+                continue;
             }
-            System.out.println(j);
-
-        } while (true);
+            System.out.println(i);
+        }
 
     }
 }
