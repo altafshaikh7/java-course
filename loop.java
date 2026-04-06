@@ -31,15 +31,29 @@ public class loop {
 
         // print numbers 1 to n
 
-        Scanner sc = new Scanner(System.in);
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter the number");
+        // int n = sc.nextInt();
+        // int counter = 1;
+        // while (counter <= n) {
+        // System.out.print(counter + " ");
+        // counter++;
+        // }
+        // System.out.println();
+
+        // print sum of fist n natural numbers
         System.out.println("Enter the number");
+        Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int counter = 1;
-        while (counter <= n) {
-            System.out.print(counter + " ");
-            counter++;
+        int sum = 0;
+        int i = 1;
+
+        while (i <= n) {
+            sum += i;
+            i++;
         }
-        System.out.println();
+        System.out.println(sum);
+
     }
 
 }
