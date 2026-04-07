@@ -14,7 +14,16 @@ public class functions {
 
         int sum = a + b;
 
-        System.out.println("sum of a + b : " + sum);
+        System.out.println("sum of a + b : " + sum); // function
+    }
+
+    public static void swap(int j, int k) {
+        int temp = j;
+        j = k;
+        k = temp;
+
+        System.out.println("k = " + k);
+        System.out.println("j = " + j);
     }
 
     public static void main(String[] args) {
@@ -27,11 +36,20 @@ public class functions {
 
         // syntax with parameters
 
-        System.out.println("Enter the value of a and b : ");
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        calculatesum(a, b);
+        // System.out.println("Enter the value of a and b : ");
+        // Scanner sc = new Scanner(System.in);
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
+        // calculatesum(a, b); // arguments
+
+        // call by value
+
+        // swap
+
+        int j = 10;
+        int k = 5;
+
+        swap(j, k);
 
     }
 }
