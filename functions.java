@@ -26,6 +26,30 @@ public class functions {
         System.out.println("j = " + j);
     }
 
+    public static int multiply() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the First number : ");
+        int m = sc.nextInt();
+        System.out.println("Enter the Secound number : ");
+        int n = sc.nextInt();
+        int product = m * n;
+
+        System.out.println("product of m * n :" + product);
+
+        return product;
+
+    }
+
+    public static int factorial(int n) {
+
+        int f = 1;
+
+        for (int i = 1; i <= n; i++) {
+            f = f * i;
+        }
+        return f;
+    }
+
     public static void main(String[] args) {
         // function / method
 
@@ -46,10 +70,18 @@ public class functions {
 
         // swap
 
-        int j = 10;
-        int k = 5;
+        // int j = 10;
+        // int k = 5;
 
-        swap(j, k);
+        // swap(j, k);
+
+        // find product of m and n by using scanner
+
+        // multiply();
+
+        // factorial of a number n by using function
+
+        System.out.println(factorial(7));
 
     }
 }
