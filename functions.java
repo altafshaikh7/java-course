@@ -76,6 +76,18 @@ public class functions {
         return a + b;
     }
 
+    public static boolean isprime(int n) {
+        boolean isprime = true;
+        for (int i = 2; i <= n - 1; i++) {
+            if (n % i == 0) {
+                isprime = false;
+                break;
+            }
+        }
+        return isprime;
+
+    }
+
     public static void main(String[] args) {
         // function / method
 
@@ -120,5 +132,6 @@ public class functions {
         System.out.println(sum(5, 2));
         System.out.println(sum(50.5f, 5.9f));
 
+        System.out.println(isprime(55));
     }
 }
