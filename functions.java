@@ -50,6 +50,16 @@ public class functions {
         return f;
     }
 
+    public static int bionimialcoefficient(int n, int r) {
+        int factn = factorial(n);
+        int factr = factorial(r);
+        int factnr = factorial(n - r);
+
+        int bionomial = factn / (factr * factnr);
+
+        return bionomial;
+    }
+
     public static void main(String[] args) {
         // function / method
 
@@ -81,7 +91,9 @@ public class functions {
 
         // factorial of a number n by using function
 
-        System.out.println(factorial(7));
+        // System.out.println(factorial(7));
 
+        // bionomial coefficient
+        System.out.println(bionimialcoefficient(5, 2));
     }
 }
