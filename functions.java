@@ -93,6 +93,21 @@ public class functions {
         System.out.println();
     }
 
+    // Binary to Decimal
+    public static void binarytodec(int BinaryNum) {
+        int mynumber = BinaryNum;
+        int power = 0;
+        int decimalnumber = 0;
+        while (BinaryNum > 0) {
+            int lastdigit = BinaryNum % 10;
+            decimalnumber = decimalnumber + (lastdigit * (int) Math.pow(2, power));
+
+            power++;
+            BinaryNum = BinaryNum / 10;
+        }
+        System.out.println("decimal of " + mynumber + " = " + decimalnumber);
+    }
+
     public static void main(String[] args) {
 
         // test calls
@@ -117,5 +132,6 @@ public class functions {
         // System.out.println("Is Prime (7): " + isprime(7));
         // prime in range
         PrimeInRange(20);
+        binarytodec(111);
     }
 }
