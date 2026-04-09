@@ -1,20 +1,17 @@
-
 import java.util.*;
 
 public class functions {
+
     public static void printhelloworld() {
         System.out.println("Hello world");
         System.out.println("Hello world");
         System.out.println("Hello world");
         System.out.println("Hello world");
-        return;
     }
 
     public static void calculatesum(int a, int b) {
-
         int sum = a + b;
-
-        System.out.println("sum of a + b : " + sum); // function
+        System.out.println("sum of a + b : " + sum);
     }
 
     public static void swap(int j, int k) {
@@ -30,108 +27,81 @@ public class functions {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the First number : ");
         int m = sc.nextInt();
-        System.out.println("Enter the Secound number : ");
-        int n = sc.nextInt();
-        int product = m * n;
 
-        System.out.println("product of m * n :" + product);
+        System.out.println("Enter the Second number : ");
+        int n = sc.nextInt();
+
+        int product = m * n;
+        System.out.println("product of m * n : " + product);
 
         return product;
-
     }
 
+    // factorial
     public static int factorial(int n) {
-
         int f = 1;
-
         for (int i = 1; i <= n; i++) {
             f = f * i;
         }
         return f;
     }
 
+    // binomial coefficient
     public static int bionimialcoefficient(int n, int r) {
         int factn = factorial(n);
         int factr = factorial(r);
         int factnr = factorial(n - r);
 
-        int bionomial = factn / (factr * factnr);
-
-        return bionomial;
+        return factn / (factr * factnr);
     }
 
-    // public static int sum(int a, int b) {
-    // return a + b;
-    // }
+    // function overloading
+    public static int sum(int a, int b) {
+        return a + b;
+    }
 
     public static int sum(int a, int b, int c) {
         return a + b + c;
-    }
-
-    public static int sum(int a, int b) {
-        return a + b;
     }
 
     public static float sum(float a, float b) {
         return a + b;
     }
 
-    public static boolean isprime(int n) {
-        boolean isprime = true;
-        for (int i = 2; i <= n - 1; i++) {
-            if (n % i == 0) { // completly divisible
-                isprime = false;
-                break;
+    // optimized isprime
+    public static boolean isprime(int u) {
+        if (u == 2)
+            return true;
+        if (u < 2)
+            return false;
+
+        for (int i = 2; i <= Math.sqrt(u); i++) {
+            if (u % i == 0) {
+                return false;
             }
         }
-        return isprime;
-
+        return true;
     }
 
     public static void main(String[] args) {
-        // function / method
 
-        // java ke andar functions ek block of code hota hai aur yeh reusable part hota
-        // hai
+        // test calls
+        printhelloworld();
 
-        // printhelloworld(); // this is function called
+        calculatesum(5, 10);
 
-        // syntax with parameters
+        swap(10, 5);
 
-        // System.out.println("Enter the value of a and b : ");
-        // Scanner sc = new Scanner(System.in);
-        // int a = sc.nextInt();
-        // int b = sc.nextInt();
-        // calculatesum(a, b); // arguments
+        multiply();
 
-        // call by value
+        System.out.println("Factorial: " + factorial(5));
 
-        // swap
+        System.out.println("Binomial Coefficient: " + bionimialcoefficient(5, 2));
 
-        // int j = 10;
-        // int k = 5;
+        System.out.println("Sum (2 numbers): " + sum(3, 5));
+        System.out.println("Sum (3 numbers): " + sum(5, 5, 65));
+        System.out.println("Sum (float): " + sum(50.5f, 5.9f));
 
-        // swap(j, k);
-
-        // find product of m and n by using scanner
-
-        // multiply();
-
-        // factorial of a number n by using function
-
-        // System.out.println(factorial(7));
-
-        // bionomial coefficient
-        // System.out.println(bionimialcoefficient(5, 2));
-
-        // function overloading
-
-        System.out.println(sum(3, 5));
-        System.out.println(sum(5, 5, 65));
-
-        System.out.println(sum(5, 2));
-        System.out.println(sum(50.5f, 5.9f));
-
-        System.out.println(isprime(55));
+        System.out.println("Is Prime (7): " + isprime(7));
     }
 }
