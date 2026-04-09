@@ -83,25 +83,39 @@ public class functions {
         return true;
     }
 
+    // prime in range
+    public static void PrimeInRange(int n) {
+        for (int i = 2; i <= n; i++) {
+            if (isprime(i)) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
 
         // test calls
-        printhelloworld();
+        // printhelloworld();
 
-        calculatesum(5, 10);
+        // calculatesum(5, 10);
 
-        swap(10, 5);
+        // swap(10, 5);
 
-        multiply();
+        // multiply();
+        // factorial
+        // System.out.println("Factorial: " + factorial(5));
 
-        System.out.println("Factorial: " + factorial(5));
+        // bionomial coefffiecient
+        // System.out.println("Binomial Coefficient: " + bionimialcoefficient(5, 2));
 
-        System.out.println("Binomial Coefficient: " + bionimialcoefficient(5, 2));
-
-        System.out.println("Sum (2 numbers): " + sum(3, 5));
-        System.out.println("Sum (3 numbers): " + sum(5, 5, 65));
-        System.out.println("Sum (float): " + sum(50.5f, 5.9f));
-
-        System.out.println("Is Prime (7): " + isprime(7));
+        // System.out.println("Sum (2 numbers): " + sum(3, 5));
+        // System.out.println("Sum (3 numbers): " + sum(5, 5, 65));
+        // fuction overloading
+        // System.out.println("Sum (float): " + sum(50.5f, 5.9f));
+        // for optimize isprime
+        // System.out.println("Is Prime (7): " + isprime(7));
+        // prime in range
+        PrimeInRange(20);
     }
 }
