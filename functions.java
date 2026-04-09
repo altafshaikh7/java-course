@@ -79,7 +79,7 @@ public class functions {
     public static boolean isprime(int n) {
         boolean isprime = true;
         for (int i = 2; i <= n - 1; i++) {
-            if (n % i == 0) {
+            if (n % i == 0) { // completly divisible
                 isprime = false;
                 break;
             }
