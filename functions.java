@@ -108,6 +108,18 @@ public class functions {
         System.out.println("decimal of " + mynumber + " = " + decimalnumber);
     }
 
+    // decimal to binary
+    public static void dectobinary(int DecimalNum) {
+        int mynumber = DecimalNum;
+        String binarynumber = "";
+        while (DecimalNum > 0) {
+            int rem = DecimalNum % 2;
+            binarynumber = rem + binarynumber;
+            DecimalNum = DecimalNum / 2;
+        }
+        System.out.println("binary of " + mynumber + " = " + binarynumber);
+    }
+
     public static void main(String[] args) {
 
         // test calls
@@ -133,5 +145,6 @@ public class functions {
         // prime in range
         PrimeInRange(20);
         binarytodec(111);
+        dectobinary(7);
     }
 }
