@@ -120,6 +120,8 @@ public class functions {
         System.out.println("binary of " + mynumber + " = " + binarynumber);
     }
 
+    // Scope in function
+
     public static void main(String[] args) {
 
         // test calls
@@ -146,5 +148,8 @@ public class functions {
         PrimeInRange(20);
         binarytodec(111);
         dectobinary(7);
+
+        int a = 5;
+        System.out.println(a);
     }
 }
