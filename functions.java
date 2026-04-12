@@ -121,6 +121,10 @@ public class functions {
     }
 
     // Scope in function
+    public static void scope() {
+        int a = 10; // local variable
+        System.out.println(a);
+    }
 
     public static void main(String[] args) {
 
@@ -151,5 +155,7 @@ public class functions {
 
         int a = 5;
         System.out.println(a);
+        scope();
+
     }
 }
